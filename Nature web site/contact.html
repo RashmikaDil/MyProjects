@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+
+    <title>GreenRoots</title>
+</head>
+<body>
+    <script src="script.js"></script>
+    <div class="body_cont">
+        <header class="header">
+            <div class="logo">
+                <a href="">GreenRoots</a>
+            </div>
+                <div style="width: auto;height: auto;" id="menuBR" onclick="gt()">
+              
+            <i class="fa-solid fa-bars" onclick="gt()" id="icon" style="font-size: 22px; color: rgb(138, 255, 154);cursor: pointer;padding: 0px;"></i>
+        </div>
+      
+            <nav class="navbar" id="nv">
+
+            <ul>
+                <li><a href="index.html">  Home</a></li>
+                <li><a href="#"> Blog    </a></li>
+                <li><a href="#"> About Us</a></li>
+                <li><a href="#"  class="active"> Contact Us</a></li>
+            </ul>
+        </nav>
+        </header>
+        <div class="box1" >
+
+<div style="  color: rgb(138, 255, 154); background: rgba(43, 255, 68, 0.034);  height: auto; padding: 15px; display: flex;align-items: center;flex-direction: column; justify-content: center; margin: 25px;">
+<h1>Contact Us</h1>
+<p style="text-align: center; font-size: 12px;">We'd love to hear from you! Whether you have a question, feedback, or just want to say hello, feel free to reach out using any of the methods below. Our team is here to assist you.</p>
+<h2 style="margin: 5px;">Get in Touch</h2>
+<div style="display: flex;" class="box-a"> 
+    <div>
+<p style="font-weight: 500;color:rgb(138, 255, 154) ;">Office Address</p>
+<p>Greenroots Ltd.</p>
+<p>123 Green Street</p>
+<p>City, State, ZIP</p>
+<p>Country</p>
+</div>
+<div>
+    <p style="font-weight: 500;color:rgb(138, 255, 154) ;">Phone</p>
+    <p>+94 76 7000 149</p>
+    <p style="font-weight: 500;color:rgb(138, 255, 154) ; margin-top: 5px;">Email</p>
+    <p>Rashmikadil2023@gmail.com</p>
+    </div>
+
+</div>
+<h2>Follow Us</h2>
+<div style="display: flex;" class="box-a">
+   
+  
+    <div class="socialM">
+        <div class="sbtn"><i class="fa-brands fa-facebook-f"></i></div>
+        <div class="sbtn"><i class="fa-brands fa-instagram"></i></div>
+        <div class="sbtn"><i class="fa-brands fa-twitter"></i></div>
+        <div class="sbtn"><i class="fa-brands fa-youtube"></i></div>
+    
+</div>
+</div>
+</div>
+
+
+        </div>
+        <div class="box2" >
+            <div class="plantBox" style="display: flex;justify-content: center;align-items: center;flex-direction: column;">
+<h1>Send Us a Message</h1>
+<p>If you prefer, you can fill out the form below, and we’ll get back to you as soon as possible.</p>
+
+<div class="form">  
+<form action="submit_contact.php" method="POST">
+   
+    <input type="text" id="name" name="name" placeholder="Your Name" required>
+
+    
+    <input type="email" id="email" name="email" placeholder="Your Email" required>
+
+   
+    <textarea id="message" name="message" rows="6" placeholder="Your Message" required></textarea>
+
+    <input type="submit" value="Submit" id="submit_btn">
+</form>
+</div>
+            </div>
+        </div>
+       
+        <footer class="footer">
+            <div class="f_logo">
+            <img src="logo.png" style="width: 30px;padding: 10px;" alt="">
+            <h3>GreenRoots</h3>
+        </div>
+        <ul>
+            <li>Our Mission</li>
+            <li>Get Involved</li>
+        </ul>
+        </footer>
+    </div>
+
+</body>
+</html>
+
+

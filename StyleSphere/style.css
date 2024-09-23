@@ -1,0 +1,256 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Oswald:wght@200..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+body{
+    display: grid;
+    margin: 0px;
+    font-family: "Oswald", sans-serif;
+    color: #274472;
+    width: 100%;
+}
+
+/*header*/
+header{
+    padding: 10px;
+}
+header nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo a{
+    padding: 0px 20px;
+    font-weight: 900;
+    color: #274472;
+    font-family: "Dancing Script", cursive;
+}
+header nav ul{
+    margin: 0px;
+    display: flex;
+    list-style: none;
+}
+header nav ul li{
+    padding: 0px 20px;
+}
+header nav ul li a , .logo a{
+    text-decoration: none;
+}
+header nav ul li a {
+    position: relative;
+
+}
+.clist{
+    width: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.clist::after{
+    content: '  ';
+    position: absolute;
+    width: 50px;
+    height: 1px;
+    background-color: #274472;
+    bottom: 0;
+    left: 0;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+    filter: drop-shadow();
+    
+}
+.clist:hover::after{
+    transform: scaleX(1);
+}
+
+header  nav .nav_r_btn{
+    font-size: 20px;
+
+}
+header  nav .nav_r_btn i{
+    padding: 0px 5px;
+    cursor: pointer;
+}
+
+/*_____________________________________________*/
+
+/*slide show start here*/
+.slide{
+    height: 500px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.prev , .next{
+    cursor: pointer;
+    position: absolute;
+    top: 250px;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 32px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+    background-color: #274472;
+}
+
+.slide{
+  display: none;
+}
+.slideshow_cont{
+    position: relative;
+    max-width: 100%;
+    overflow: hidden;
+}
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+
+@keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+
+.text{
+    display: flex;
+    justify-content: center;  
+    position: absolute;
+    color: #cdf3ff;
+    top: 70%;
+    right: 50%;
+    width: 100%;
+    transform: translate(50% , 0);
+    font-size: 60px;
+    font-family: "Bebas Neue", sans-serif;
+    filter: drop-shadow(1px 1px 10px black);
+}
+
+/*_____________________________________________*/
+
+/*NEW ARRIVALS*/
+
+.new_a{
+    padding: 15px;
+}
+.new_a_slide{
+    padding: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.item_img{
+    height: 300px;
+    width: 200px;
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+}
+.item_img:hover{
+    transition: 0.5s ease-in-out;
+    background-size: 120%;
+}
+.new_a_item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #5885AF;
+    width: 200px;
+    margin: 10px;
+  
+}
+.new_a_item h3{
+    margin: 10px;
+    font-size: 12px ;
+    font-family: "Work Sans", sans-serif;
+}
+.size_bar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.new_a_item span{
+    margin: 0px 0px 10px 0px;
+}
+.size{
+    border: 1px solid #7c8c9b79;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    margin: 5px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.size:hover{
+    border: 1px solid #274472;
+    color: #274472;
+    transition: 0.5s;
+}
+.button{
+    height: 40px;
+    margin-top: 10px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.5s;
+    width: 100%;
+}
+.add_to_cart{
+    color:  #274472c7;
+    background: white;
+    border: 2px solid #52799c79;
+}
+.buy{
+    color: white;
+    background-color: #274472;
+    border: 2px solid #52799c79;
+}
+.button:hover{
+    color: white;
+    background-color: #274472;
+    transition: 0.5s;
+}
+.buy:hover{
+    color:  #274472c7;
+    background: white;
+    border: 2px solid #52799c79;
+}
+.heart{
+    background-color: #ffffff;
+    width: 35px;
+    height: 35px;
+    border-radius: 50px;
+    float: right;
+    font-size: 15px;
+    display: flex  ;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 10px;
+    filter: drop-shadow(1px 1px 10px white);
+}

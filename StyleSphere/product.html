@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+   
+
+    <title>StyleSphere</title>
+</head>
+<body>
+
+    <header style="grid-area: header;">
+        <nav>
+            <div class="logo"><a href="index.html">StyleSphere</a></div>
+            <ul>
+                <li><a class="clist" href="">WOMEN</a></li>
+                <li><a class="clist" href="">MEN</a></li>
+                <li><a class="clist" href="">KIDS</a></li>
+                <li><a class="clist" href="">BRANDS</a></li>
+            </ul>
+            <div class="nav_r_btn">
+                <i class="fa-solid fa-circle-user"></i>
+                <i class="fa-solid fa-heart"></i>
+                <i class="fa-solid fa-cart-shopping"></i>
+            </div>
+        </nav>
+    </header>
+<div class="image" style="grid-area: image;">
+    <img src="" alt="" id="img">
+</div>
+<div class="bb" style="grid-area: bb;">
+
+
+    <h1 id="name"></h1>
+    <p style="margin: 0px;"><B>Availability : </B><span id="avi"> </span></p>
+<p style="margin: 0px;"><b>Color : </b><span id="c"> </span></p>
+<p style="margin: 0px;"><b>Material : </b><span id="mat"> </span></p>
+
+    <h3 id="price"></h3>
+
+        
+    <div class="size_bar" style="justify-content: left; margin-bottom: 25px;margin-top: 5px;">
+        <div class="size">S</div>
+        <div class="size">M</div>
+        <div class="size">L</div>
+        <div class="size">XL</div>
+    </div>
+    <div class="qty">
+        <button id="btn" onclick="minus()">-</button>
+        
+        <p id="num">1</p>
+        <button id="btn" onclick="plus()">+</button>
+       
+    </div>
+    
+ 
+
+    <button class="button add_to_cart" style="margin: 0px;width:    250px; margin-bottom: 20px;">ADD TO CART <i class="fa-solid fa-cart-shopping"></i></button>
+       <br>
+                    <button class="button buy"style="margin: 0px;width:    250px;" >BUY NOW </button>
+
+
+               
+<h4>Discription</h4>
+<p id="dis"style="text-align:justify; font-size :14px;"></p>
+    
+
+</div>
+<div class="new_a" style="grid-area: new_a;">
+    
+
+
+
+
+
+
+
+
+
+
+</div>
+
+<footer style="grid-area: footer;">
+    Code By Rashmika Dilhara
+</footer>
+
+<style>
+
+    body{
+        margin: 0px;
+        display: grid;
+        grid-template-columns: 60% 40%;
+        grid-template-rows: auto;
+        grid-template-areas: "header header"
+                            "image bb"
+                            "new_a new_a"
+                            "footer footer";
+    }
+   
+</style>
+
+<script src="DATA.JS"></script>
+<script src="cal.js"></script>
+</body>
+</html>
